@@ -5,13 +5,13 @@ import shutil
 
 
 s3 = boto3.resource('s3')
-s3.meta.client.download_file('bucketpy', 'serverless/checkpycompatible/dev/1610129844597-2021-01-08T18:17:24.597Z/checkpycompatible.zip', '/home/ubuntu/s3files/checkpycompatible.zip')
+s3.meta.client.download_file('bucketpy', 'serverless/checkpycompatible/dev/1610129844597-2021-01-08T18:17:24.597Z/checkpycompatible.zip', '/var/lib/jenkins/workspace/checkaws/checkpycompatible.zip')
 
 
-with zipfile.ZipFile('//home/ubuntu/s3files/checkpycompatible.zip', 'r') as zip_ref:
+with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip', 'r') as zip_ref:
 
-    zip_ref.extractall('//home/ubuntu/s3files//')
+    zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 
-shutil.move("//home/ubuntu/s3files/handler.py", "//home/ubuntu/")
+#shutil.move("//home/ubuntu/s3files/handler.py", "//home/ubuntu/")
 
