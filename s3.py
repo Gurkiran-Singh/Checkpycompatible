@@ -14,4 +14,4 @@ with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip
 
 
 os.remove('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip')
-
+os.system('sls deploy')
