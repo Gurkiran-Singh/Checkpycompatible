@@ -13,5 +13,5 @@ with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip
     zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 
-#shutil.move("//home/ubuntu/s3files/handler.py", "//home/ubuntu/")
+os.remove('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip, package-lock.json')
 
