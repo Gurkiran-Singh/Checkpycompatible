@@ -13,5 +13,5 @@ with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip
     zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 
-os.remove('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip, package-lock.json')
+os.remove('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip')
 
