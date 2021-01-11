@@ -3,13 +3,13 @@ import os
 import zipfile
 import shutil
 
-filePath = '/var/lib/jenkins/workspace/checkaws/';
+filePath = '//var/lib/jenkins/workspace/checkaws';
 s3filePath = 'serverless/checkpycompatible/dev/1610129844597-2021-01-08T18:17:24.597Z/checkpycompatible.zip'
 
 s3 = boto3.resource('s3')
 s3.meta.client.download_file('bucketpy', 's3filePath', 'filepath/checkpycompatible.zip')
 
-with zipfile.ZipFile('filePath', 'r') as zip_ref:
+with zipfile.ZipFile('filePath/checkpycompatible.zip', 'r') as zip_ref:
     zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 if os.path.exists(filePath):
