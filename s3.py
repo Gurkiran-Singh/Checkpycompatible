@@ -13,12 +13,12 @@ with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws//checkpycompatible.zi
     zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 if os.path.exists(filePath):
-    os.remove('filePath' + '/checkpycompatible.zip')
-    os.remove('filePath/package-lock.json')
-    os.rmdir('filePath/node_modules')
+    os.remove('filePath , checkpycompatible.zip')
+  #  os.remove('filePath/package-lock.json')
+ #   os.rmdir('filePath/node_modules')
 
 else:
     print('Cannot delete the files')
 
-os.system('sls deploy')
+#os.system('sls deploy')
 
