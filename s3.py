@@ -16,9 +16,9 @@ with zipfile.ZipFile('//var/lib/jenkins/workspace/checkaws//checkpycompatible.zi
     zip_ref.extractall('//var/lib/jenkins/workspace/checkaws//')
 
 if os.path.exists(filePath):
-    os.remove('//var/lib/jenkins/workspace/checkaws/checkpycompatible.zip')
-    os.remove('//var/lib/jenkins/workspace/checkaws//package-lock.json')
-    shutil.rmtree('//var/lib/jenkins/workspace/checkaws//node_modules')
+    os.remove( filePath +  '/checkpycompatible.zip')
+    #os.remove('//var/lib/jenkins/workspace/checkaws//package-lock.json')
+    #shutil.rmtree('//var/lib/jenkins/workspace/checkaws//node_modules')
 
 else:
     print('Cannot delete the files')
