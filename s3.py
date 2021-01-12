@@ -23,5 +23,5 @@ if os.path.exists(filePath):
 else:
     print('Cannot delete the files')
 
-os.system('sls deploy')
+#os.system('sls deploy')
 
