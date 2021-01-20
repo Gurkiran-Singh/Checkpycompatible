@@ -24,6 +24,6 @@ else:
 
     print ('Cannot delete the files')
 
- os.system('sls deploy')
+os.system('sls deploy')
 
 
