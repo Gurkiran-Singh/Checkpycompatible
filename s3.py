@@ -22,8 +22,8 @@ if os.path.exists(filePath):
     shutil.rmtree(filePath + '/node_modules')
 else:
 
-    print 'Cannot delete the files'
+    print ('Cannot delete the files')
 
-# os.system('sls deploy'
+# os.system('sls deploy')
 
 
