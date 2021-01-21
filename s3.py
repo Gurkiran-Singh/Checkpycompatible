@@ -25,6 +25,6 @@ else:
     print ('Cannot delete the files')
 
 os.system('npm install serverless-kubeless')
-os.system('sls deploy')
+#os.system('sls deploy')
 
 
